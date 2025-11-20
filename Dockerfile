@@ -1,4 +1,4 @@
-FROM tomcat:10.1-jdk17
+FROM tomcat:10.1-jdk21
 
 # Xoá ứng dụng mẫu của Tomcat
 RUN rm -rf /usr/local/tomcat/webapps/*
