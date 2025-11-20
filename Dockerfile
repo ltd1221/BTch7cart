@@ -1,9 +1,9 @@
 FROM tomcat:10.1-jdk21
 
-# Xoá ứng dụng mẫu của Tomcat
+# Xoá app mặc định
 RUN rm -rf /usr/local/tomcat/webapps/*
 
-# Copy WAR của bạn vào Tomcat
+# Copy WAR của bạn
 COPY ch07_cart.war /usr/local/tomcat/webapps/ROOT.war
 
 EXPOSE 8080
